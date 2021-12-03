@@ -2,11 +2,11 @@
 //  SceneDelegate.swift
 //  cocktails
 //
-//  Created by Laura Ikic on 21.11.21.
+//  Created by Laura Ikic on 24.11.21.
 //
 
 import UIKit
-
+import CoreData
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -47,7 +47,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        (UIApplication.shared.delegate as? DataManager)?.saveContext()
     }
 
 
